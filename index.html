@@ -1,0 +1,476 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Uguron helps construction teams validate permit packages, detect missing requirements, and prepare submission-ready applications before they go to city authorities."
+    />
+    <title>Uguron | Construction Permit Validation Platform</title>
+    <link rel="icon" href="uguron-mark.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="#top" aria-label="Uguron home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 48 48" focusable="false">
+            <path class="brand-u" d="M10 9h8v18.2c0 3.7 2.2 5.9 6 5.9s6-2.2 6-5.9V9h8v18.4C38 36 32.4 41 24 41S10 36 10 27.4V9Z" />
+            <path class="brand-corner" d="M28 10h10v10" />
+            <path class="brand-check" d="M20 23.5 23.6 27 31 18.5" />
+          </svg>
+        </span>
+        <span class="brand-word">Uguron</span>
+      </a>
+
+      <button class="nav-toggle" type="button" data-nav-toggle aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav" data-nav>
+        <a href="#platform">Platform</a>
+        <a href="#workflow">Workflow</a>
+        <a href="#features">Features</a>
+        <a href="#pricing">Pricing</a>
+        <a class="nav-cta" href="#demo">Request Demo</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero section-dark" aria-labelledby="hero-title">
+        <div class="hero-visual" aria-hidden="true">
+          <div class="dashboard-shell">
+            <div class="dashboard-topbar">
+              <span></span>
+              <span></span>
+              <span></span>
+              <strong>Permit Readiness Command</strong>
+            </div>
+            <div class="dashboard-grid">
+              <div class="readiness-panel">
+                <div>
+                  <p>Submission readiness</p>
+                  <strong>94%</strong>
+                </div>
+                <div class="score-ring">
+                  <span>Ready</span>
+                </div>
+              </div>
+              <div class="status-panel">
+                <p class="panel-label">Active projects</p>
+                <div class="status-row">
+                  <span>Riverside Mixed-Use</span>
+                  <strong class="status-good">Complete</strong>
+                </div>
+                <div class="meter"><span style="width: 96%"></span></div>
+                <div class="status-row">
+                  <span>North Yard Phase II</span>
+                  <strong class="status-warn">3 gaps</strong>
+                </div>
+                <div class="meter"><span style="width: 78%"></span></div>
+                <div class="status-row">
+                  <span>Harbor Logistics Build</span>
+                  <strong class="status-good">Reviewed</strong>
+                </div>
+                <div class="meter"><span style="width: 88%"></span></div>
+              </div>
+              <div class="compliance-panel">
+                <p class="panel-label">Compliance indicators</p>
+                <div class="indicator-row">
+                  <span></span>
+                  Zoning checklist matched
+                </div>
+                <div class="indicator-row">
+                  <span></span>
+                  Stormwater form attached
+                </div>
+                <div class="indicator-row warning">
+                  <span></span>
+                  Fire review letter missing
+                </div>
+              </div>
+              <div class="package-panel">
+                <p class="panel-label">Permit package</p>
+                <div class="document-stack">
+                  <i></i>
+                  <i></i>
+                  <i></i>
+                </div>
+                <strong>18 documents organized</strong>
+                <small>Sorted by authority, trade, and due date</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-content container">
+          <p class="eyebrow">AI permit preparation for construction teams</p>
+          <h1 id="hero-title">Get Construction Permits Right the First Time</h1>
+          <p class="hero-copy">
+            Uguron uses AI to validate permits, detect missing requirements, and assemble
+            submission-ready applications before they are sent to city authorities.
+          </p>
+          <div class="hero-actions" aria-label="Primary actions">
+            <a class="button button-primary" href="#demo">Request Demo</a>
+            <a class="button button-secondary" href="#workflow">See How It Works</a>
+          </div>
+          <div class="hero-proof" aria-label="Platform outcomes">
+            <span>Reduce rejection risk</span>
+            <span>Find missing documents</span>
+            <span>Track compliance by project</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="problem-section" aria-labelledby="problem-title">
+        <div class="container split-layout">
+          <div class="section-kicker">The cost of uncertainty</div>
+          <div>
+            <h2 id="problem-title">Permit delays compound fast when applications leave the office incomplete.</h2>
+            <p>
+              Construction teams lose weeks to missing attachments, jurisdiction-specific requirements,
+              manual document checks, and back-and-forth with city offices. Uguron gives operators a
+              clear readiness view before a package is submitted.
+            </p>
+          </div>
+        </div>
+        <div class="container problem-grid" aria-label="Common permit problems">
+          <article>
+            <span class="problem-number">01</span>
+            <h3>Incomplete applications</h3>
+            <p>Required forms, trade details, plan sheets, and supporting letters are easy to miss across active jobs.</p>
+          </article>
+          <article>
+            <span class="problem-number">02</span>
+            <h3>Jurisdiction variation</h3>
+            <p>Every city and project type can change what needs to be included, reviewed, and tracked.</p>
+          </article>
+          <article>
+            <span class="problem-number">03</span>
+            <h3>Expensive rework</h3>
+            <p>A rejected package can stall schedules, push inspections, and create avoidable project costs.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-dark platform-section" id="platform" aria-labelledby="platform-title">
+        <div class="container section-heading">
+          <p class="eyebrow">The Uguron platform</p>
+          <h2 id="platform-title">Upload project documents. Get a clean permit package.</h2>
+          <p>
+            Uguron scans permits, plans, and supporting documents against project context and location.
+            The platform flags errors, missing information, and compliance issues so teams can correct
+            them before submission.
+          </p>
+        </div>
+        <div class="container platform-layout">
+          <div class="platform-console" aria-label="Uguron validation summary mockup">
+            <div class="console-header">
+              <div>
+                <span>Project</span>
+                <strong>North Yard Phase II</strong>
+              </div>
+              <button type="button" data-export-package>Export Package</button>
+            </div>
+            <div class="console-body">
+              <div class="validation-card passed">
+                <strong>Building permit form</strong>
+                <span>Validated</span>
+              </div>
+              <div class="validation-card passed">
+                <strong>Electrical plan sheets</strong>
+                <span>Matched</span>
+              </div>
+              <div class="validation-card attention">
+                <strong>Fire review letter</strong>
+                <span>Missing</span>
+              </div>
+              <div class="validation-card passed">
+                <strong>Contractor license</strong>
+                <span>Current</span>
+              </div>
+            </div>
+            <p class="console-note" data-console-note>4 checks complete. 1 item needs attention before submission.</p>
+          </div>
+          <div class="platform-points">
+            <article>
+              <h3>Location-aware validation</h3>
+              <p>Check required forms and documents using project location, work type, and permit category.</p>
+            </article>
+            <article>
+              <h3>Submission organization</h3>
+              <p>Group files into a clear package so project teams know what is ready and what still needs attention.</p>
+            </article>
+            <article>
+              <h3>Operational visibility</h3>
+              <p>Keep PMs, coordinators, and executives aligned on readiness, deadlines, and outstanding blockers.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="workflow-section" id="workflow" aria-labelledby="workflow-title">
+        <div class="container section-heading compact">
+          <p class="eyebrow dark">Three-step flow</p>
+          <h2 id="workflow-title">From scattered files to submission-ready clarity.</h2>
+        </div>
+        <div class="container workflow-grid">
+          <article>
+            <span>01</span>
+            <h3>Upload</h3>
+            <p>Bring in permits, plans, contractor documents, letters, and city forms from each project.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>AI Validation</h3>
+            <p>Uguron scans for missing requirements, incomplete fields, conflicting details, and compliance risk.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Submit</h3>
+            <p>Export an organized permit package that is cleaner, easier to review, and ready for city intake.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="features-section" id="features" aria-labelledby="features-title">
+        <div class="container section-heading">
+          <p class="eyebrow dark">Built for active construction portfolios</p>
+          <h2 id="features-title">Every project gets a readiness system.</h2>
+          <p>
+            Keep permit work moving with shared controls for validation, deadlines, inspections,
+            documents, and compliance alerts.
+          </p>
+        </div>
+        <div class="container feature-grid">
+          <article class="feature-card">
+            <span class="feature-icon">AI</span>
+            <h3>AI permit validation</h3>
+            <p>Analyze forms, plan references, project details, and required fields before the package leaves your team.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-icon">MD</span>
+            <h3>Missing document detection</h3>
+            <p>Identify absent attachments, signatures, licenses, review letters, insurance certificates, and supporting files.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-icon">RS</span>
+            <h3>Readiness scoring</h3>
+            <p>See a project-level readiness score with the issues most likely to slow intake or trigger rework.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-icon">PD</span>
+            <h3>Project dashboards</h3>
+            <p>Track package status, open issues, owners, due dates, and progress across jobs from one workspace.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-icon">DT</span>
+            <h3>Deadline and inspection tracking</h3>
+            <p>Monitor filing dates, resubmission windows, inspection milestones, and internal follow-up tasks.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-icon">CA</span>
+            <h3>Compliance alerts</h3>
+            <p>Surface permit, document, and jurisdiction requirements that need action before submission.</p>
+          </article>
+          <article class="feature-card wide">
+            <span class="feature-icon">DM</span>
+            <h3>Centralized document management</h3>
+            <p>Maintain a single source of truth for permit packages, plan sheets, comments, versions, and supporting records.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="value-section section-dark" aria-labelledby="value-title">
+        <div class="container value-layout">
+          <div>
+            <p class="eyebrow">Operational impact</p>
+            <h2 id="value-title">Avoid weeks of delays before they hit the schedule.</h2>
+          </div>
+          <div class="value-grid">
+            <article>
+              <strong>Fewer rejected packages</strong>
+              <p>Catch common intake blockers earlier and reduce the risk of costly resubmissions.</p>
+            </article>
+            <article>
+              <strong>Thousands saved per delay avoided</strong>
+              <p>Protect labor plans, inspection windows, and downstream subcontractor schedules.</p>
+            </article>
+            <article>
+              <strong>Less manual paperwork</strong>
+              <p>Replace spreadsheet chasing with structured readiness, owners, and document status.</p>
+            </article>
+            <article>
+              <strong>Clear executive visibility</strong>
+              <p>Give leaders a portfolio view of permit risk across jobs, regions, and teams.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="audience-section" aria-labelledby="audience-title">
+        <div class="container section-heading compact">
+          <p class="eyebrow dark">Who Uguron serves</p>
+          <h2 id="audience-title">Built for the teams accountable for moving projects forward.</h2>
+        </div>
+        <div class="container audience-grid">
+          <article>
+            <h3>General contractors</h3>
+            <p>Standardize permit preparation across jobs, trades, and project teams.</p>
+          </article>
+          <article>
+            <h3>Construction firms</h3>
+            <p>Create repeatable workflows for multi-project permit and compliance operations.</p>
+          </article>
+          <article>
+            <h3>Developers</h3>
+            <p>Reduce entitlement and build-out friction with better package readiness visibility.</p>
+          </article>
+          <article>
+            <h3>Project managers</h3>
+            <p>Know what is missing, who owns it, and when it needs to be resolved.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="pricing-section" id="pricing" aria-labelledby="pricing-title">
+        <div class="container section-heading">
+          <p class="eyebrow dark">Simple SaaS pricing</p>
+          <h2 id="pricing-title">Choose the permit operating model that fits your portfolio.</h2>
+          <p>Start with one team, expand across regions, or standardize permit readiness enterprise-wide.</p>
+        </div>
+        <div class="container pricing-grid">
+          <article class="price-card">
+            <h3>Starter</h3>
+            <p>For single teams validating active projects.</p>
+            <strong>$499<span>/mo</span></strong>
+            <ul>
+              <li>Up to 5 active projects</li>
+              <li>AI permit validation</li>
+              <li>Readiness scores</li>
+              <li>Document issue tracking</li>
+            </ul>
+            <a class="button button-outline" href="#demo" data-plan="Starter">Request Demo</a>
+          </article>
+          <article class="price-card featured">
+            <div class="badge">Most selected</div>
+            <h3>Growth</h3>
+            <p>For construction companies managing multiple jobs and regions.</p>
+            <strong>$1,499<span>/mo</span></strong>
+            <ul>
+              <li>Up to 30 active projects</li>
+              <li>Location-aware compliance checks</li>
+              <li>Deadline and inspection tracking</li>
+              <li>Portfolio dashboards</li>
+            </ul>
+            <a class="button button-primary" href="#demo" data-plan="Growth">Request Demo</a>
+          </article>
+          <article class="price-card">
+            <h3>Enterprise</h3>
+            <p>For developers and firms standardizing permit operations at scale.</p>
+            <strong>Custom</strong>
+            <ul>
+              <li>Unlimited projects</li>
+              <li>Advanced permissions</li>
+              <li>Custom compliance workflows</li>
+              <li>Dedicated onboarding</li>
+            </ul>
+            <a class="button button-outline" href="#demo" data-plan="Enterprise">Talk to Sales</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="trust-section section-dark" aria-labelledby="trust-title">
+        <div class="container trust-layout">
+          <div>
+            <p class="eyebrow">Trust and control</p>
+            <h2 id="trust-title">Secure document handling for high-stakes project work.</h2>
+            <p>
+              Uguron is designed for reliable permit preparation, auditable workflows, and clear ownership.
+              The platform helps validate and organize applications; final permit decisions remain with the
+              relevant city authorities.
+            </p>
+          </div>
+          <div class="trust-grid">
+            <article>
+              <h3>Private by design</h3>
+              <p>Centralize sensitive project files with role-based access and controlled workspaces.</p>
+            </article>
+            <article>
+              <h3>Accuracy focused</h3>
+              <p>Flag issues with traceable context so teams understand what needs review before submission.</p>
+            </article>
+            <article>
+              <h3>Reliable operations</h3>
+              <p>Keep package state, deadlines, and document history visible across project stakeholders.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-section" id="demo" aria-labelledby="cta-title">
+        <div class="container cta-layout">
+          <div>
+            <p class="eyebrow dark">Stop losing time to permit delays</p>
+            <h2 id="cta-title">Prepare cleaner permit packages before they reach the city desk.</h2>
+            <p>
+              See how Uguron helps teams detect missing requirements, reduce rejection risk, and keep
+              construction schedules moving with operational clarity.
+            </p>
+          </div>
+          <form class="demo-form" data-demo-form>
+            <label for="demo-email">
+              Work email
+              <input id="demo-email" type="email" name="email" placeholder="name@company.com" required />
+            </label>
+            <label for="company-size">
+              Company size
+              <select id="company-size" name="company-size" required>
+                <option value="">Select range</option>
+                <option>25-100 employees</option>
+                <option>101-500 employees</option>
+                <option>501+ employees</option>
+              </select>
+            </label>
+            <label for="plan-interest">
+              Plan interest
+              <select id="plan-interest" name="plan" data-plan-select required>
+                <option value="">Select plan</option>
+                <option>Starter</option>
+                <option>Growth</option>
+                <option>Enterprise</option>
+              </select>
+            </label>
+            <button class="button button-primary" type="submit">Request Demo</button>
+            <p class="form-note" data-form-note aria-live="polite">We will follow up with a focused permit-readiness walkthrough.</p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-layout">
+        <a class="brand" href="#top" aria-label="Uguron home">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 48 48" focusable="false">
+              <path class="brand-u" d="M10 9h8v18.2c0 3.7 2.2 5.9 6 5.9s6-2.2 6-5.9V9h8v18.4C38 36 32.4 41 24 41S10 36 10 27.4V9Z" />
+              <path class="brand-corner" d="M28 10h10v10" />
+              <path class="brand-check" d="M20 23.5 23.6 27 31 18.5" />
+            </svg>
+          </span>
+          <span class="brand-word">Uguron</span>
+        </a>
+        <p>AI-powered permit validation and compliance preparation for construction teams.</p>
+        <div>
+          <a href="#platform">Platform</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#demo">Demo</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
