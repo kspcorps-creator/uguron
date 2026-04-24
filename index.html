@@ -33,6 +33,7 @@
         <a href="#platform">Platform</a>
         <a href="#workflow">Workflow</a>
         <a href="#features">Features</a>
+        <a href="#workspace">Workspace</a>
         <a href="#pricing">Pricing</a>
         <a class="nav-cta" href="#demo">Request Demo</a>
       </nav>
@@ -114,7 +115,7 @@
           </p>
           <div class="hero-actions" aria-label="Primary actions">
             <a class="button button-primary" href="#demo">Request Demo</a>
-            <a class="button button-secondary" href="#workflow">See How It Works</a>
+            <a class="button button-secondary" href="#workspace">Launch Workspace</a>
           </div>
           <div class="hero-proof" aria-label="Platform outcomes">
             <span>Reduce rejection risk</span>
@@ -335,6 +336,146 @@
         </div>
       </section>
 
+      <section class="workspace-section" id="workspace" aria-labelledby="workspace-title">
+        <div class="container section-heading">
+          <p class="eyebrow dark">Live project workspace</p>
+          <h2 id="workspace-title">Create an account and keep every permit package organized.</h2>
+          <p>
+            Save projects, track missing requirements, monitor readiness, and return to your permit data
+            from any browser once Uguron is connected to its secure database.
+          </p>
+        </div>
+
+        <div class="container workspace-layout">
+          <aside class="auth-panel" aria-label="Uguron account access">
+            <div class="workspace-status" data-backend-status>
+              <span></span>
+              Checking workspace connection
+            </div>
+
+            <div class="auth-forms" data-auth-forms>
+              <form class="workspace-form" data-signup-form>
+                <h3>Create account</h3>
+                <label for="signup-name">
+                  Full name
+                  <input id="signup-name" name="name" autocomplete="name" placeholder="Jordan Lee" required />
+                </label>
+                <label for="signup-company">
+                  Company
+                  <input id="signup-company" name="company" autocomplete="organization" placeholder="Northline Builders" required />
+                </label>
+                <label for="signup-email">
+                  Work email
+                  <input id="signup-email" type="email" name="email" autocomplete="email" placeholder="name@company.com" required />
+                </label>
+                <label for="signup-password">
+                  Password
+                  <input id="signup-password" type="password" name="password" autocomplete="new-password" minlength="8" placeholder="Minimum 8 characters" required />
+                </label>
+                <button class="button button-primary" type="submit">Create Workspace</button>
+              </form>
+
+              <form class="workspace-form" data-signin-form>
+                <h3>Sign in</h3>
+                <label for="signin-email">
+                  Work email
+                  <input id="signin-email" type="email" name="email" autocomplete="email" placeholder="name@company.com" required />
+                </label>
+                <label for="signin-password">
+                  Password
+                  <input id="signin-password" type="password" name="password" autocomplete="current-password" placeholder="Your password" required />
+                </label>
+                <button class="button button-outline" type="submit">Sign In</button>
+              </form>
+            </div>
+
+            <div class="user-panel" data-user-panel hidden>
+              <p class="eyebrow dark">Signed in</p>
+              <h3 data-user-email>Workspace ready</h3>
+              <p data-user-meta>Project data is private to this account when Supabase is connected.</p>
+              <button class="button button-outline" type="button" data-signout>Sign Out</button>
+            </div>
+
+            <p class="workspace-message" data-auth-message aria-live="polite"></p>
+          </aside>
+
+          <div class="workspace-app" data-workspace-app hidden>
+            <div class="workspace-summary" aria-label="Workspace summary">
+              <article>
+                <span>Active projects</span>
+                <strong data-project-count>0</strong>
+              </article>
+              <article>
+                <span>Average readiness</span>
+                <strong data-average-readiness>0%</strong>
+              </article>
+              <article>
+                <span>Open requirements</span>
+                <strong data-open-items>0</strong>
+              </article>
+            </div>
+
+            <form class="project-form" data-project-form>
+              <div class="form-section-title">
+                <h3>Add permit project</h3>
+                <p>Track the information your team needs before a package goes to the city intake desk.</p>
+              </div>
+              <div class="project-form-grid">
+                <label for="project-name">
+                  Project name
+                  <input id="project-name" name="projectName" placeholder="Riverside Mixed-Use" required />
+                </label>
+                <label for="jurisdiction">
+                  City or jurisdiction
+                  <input id="jurisdiction" name="jurisdiction" placeholder="Austin, TX" required />
+                </label>
+                <label for="permit-type">
+                  Permit type
+                  <select id="permit-type" name="permitType" required>
+                    <option value="">Select type</option>
+                    <option>Building permit</option>
+                    <option>Electrical permit</option>
+                    <option>Plumbing permit</option>
+                    <option>Mechanical permit</option>
+                    <option>Demolition permit</option>
+                    <option>Site development permit</option>
+                  </select>
+                </label>
+                <label for="deadline">
+                  Target submission date
+                  <input id="deadline" type="date" name="deadline" required />
+                </label>
+                <label for="project-status">
+                  Package status
+                  <select id="project-status" name="status" required>
+                    <option>Draft</option>
+                    <option>Needs review</option>
+                    <option>Blocked</option>
+                    <option>Ready to submit</option>
+                    <option>Submitted</option>
+                  </select>
+                </label>
+                <label for="missing-items" class="full-field">
+                  Missing requirements
+                  <textarea id="missing-items" name="missingItems" rows="4" placeholder="Fire review letter&#10;Contractor license renewal&#10;Stormwater form"></textarea>
+                </label>
+                <label for="project-notes" class="full-field">
+                  Notes
+                  <textarea id="project-notes" name="notes" rows="4" placeholder="Internal review notes, owner comments, city intake details"></textarea>
+                </label>
+              </div>
+              <button class="button button-primary" type="submit">Save Project</button>
+            </form>
+
+            <div class="project-list-header">
+              <h3>Saved projects</h3>
+              <p data-project-empty>Saved permit projects will appear here.</p>
+            </div>
+            <div class="project-list" data-project-list></div>
+          </div>
+        </div>
+      </section>
+
       <section class="pricing-section" id="pricing" aria-labelledby="pricing-title">
         <div class="container section-heading">
           <p class="eyebrow dark">Simple SaaS pricing</p>
@@ -465,12 +606,15 @@
         <p>AI-powered permit validation and compliance preparation for construction teams.</p>
         <div>
           <a href="#platform">Platform</a>
+          <a href="#workspace">Workspace</a>
           <a href="#pricing">Pricing</a>
           <a href="#demo">Demo</a>
         </div>
       </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="config.js"></script>
     <script src="app.js"></script>
   </body>
 </html>
